@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "PixelPal",
+    "image": "/product/pixelPal.png",
+    "description": "Technology HTML, and Tailwind. This is a project developed for a fictive firm called Stifinneren. Its a blogg where the owner can read and write posts about hiking.",
+    "mainDescription": "Pixel Pal is a website developed as an assignment focused on learning and using Tailwind CSS. The project is built using HTML and Tailwind CSS only, with no use of JavaScript or TypeScript. The website functions as a visual shell rather than a fully functional application, and its main purpose is to demonstrate layout, styling, and responsive design using Tailwind. The assignment focused on understanding utility-first CSS, component structure, and consistent design practices.",
+    "url": "https://github.com/Andlie94/ca_Tailwind/tree/css-frameworks",
+    "url1": "https://aquamarine-raindrop-9044fe.netlify.app/"
+  },
+  {
+    "id": 2,
+    "title": "The Auction Room",
+    "image": "/product/auctionRoom.png",
+    "description": "Technology HTML, Tailwind and JavaScript. This is a project developed for a fictive firm called The Auction Room. Its a auction website where you can bid on items, and s.",
+    "mainDescription": "The Auction Room is a web application develop for our Semester project. The project is built using HTML, Tailwind CSS, and JavaScript. The application allows users to browse available auction items, place bids on products, and compete with other users in an interactive auction environment. The focus of the project was to practice working with JavaScript logic, API interaction, and dynamic UI updates, while creating a clean and responsive user interface using Tailwind CSS.",
+    "url": "https://github.com/T0nj3/auction-room",
+    "url1": "https://auction-room.netlify.app/"
+  },
+  {
+  "id": 3,
+  "title": "Cartastrophe",
+  "image": "/product/Cartastrophe.png",
+  "description": "Technologies used: HTML, Tailwind CSS, and Next.js. Cartastrophe is a webshop developed for a fictive company, allowing users to log in, add products to a cart, and complete checkout.",
+  "mainDescription": "Cartastrophe is a website developed as an assignment in the JavaScript Frameworks course. The project is built with Next.js 16 and Tailwind CSS, and written in JSX. The application allows users to browse products, view individual product pages based on an ID, add items to a shopping cart, and complete a checkout process. The focus of the assignment was to use modern frameworks, component-based architecture, and dynamic routing.",
+  "url": "https://github.com/Andlie94/Cartastrophe-JSFW",
+  "url1": "https://cartastrophe.netlify.app/"
+}
+]
