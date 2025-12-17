@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 export function Header() {
@@ -17,7 +17,7 @@ export function Header() {
 
   return (
     <header className="w-full py-4 px-6 border-b bg-[--background] text-[--foreground]">
-      <nav className="max-w-7xl mx-auto flex items-center justify-start text-[--foreground]">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between text-[--foreground]">
         {/* Hamburger Button */}
         <button
           onClick={toggleMenu}
@@ -26,8 +26,8 @@ export function Header() {
         >
           {[
             { openClass: "rotate-45 translate-y-2" },
-            { openClass: "opacity-0" },
-            { openClass: "-rotate-45 -translate-y-2" },
+            { openClass: "hidden transition duration-300 ease-out" },
+            { openClass: "-rotate-45 -translate-y-0" },
           ].map((line, index) => (
             <span
               key={index}
