@@ -12,25 +12,25 @@ interface PageProps {
 
 export default function ProductPage({ params }: PageProps) {
   const { id } = React.use(params);
-  const product = products.find((p) => p.id === Number(id));
+  const product = products.find((product) => product.id === Number(id));
 
-  if (!product) {
+  if (product === undefined) {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-center p-24">
+      <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold mb-8">Product Not Found</h1>
         <p className="text-gray-600 mb-4">Looking for product ID: {id}</p>
-        <Link href="/" className="text-blue-600 hover:underline">
-          Go back to home
+        <Link href="/" className="text-[#ffffff] hover:underline">
+          <p>Go Back to Home</p>
         </Link>
-      </main>
+      </div>
     );
   }
 
   return (
-    <main className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-8 mt-24">
       <Link
         href="/"
-        className="inline-block mb-8 hover:text-yellow-600 transition-colors"
+        className="inline-block mb-8 hover:text-[#dee950] transition-colors"
       >
         Back to products
       </Link>
@@ -42,6 +42,7 @@ export default function ProductPage({ params }: PageProps) {
             src={product.image}
             alt={product.title}
             fill
+            quality={100}
             className="object-cover"
           />
         </div>
@@ -59,7 +60,7 @@ export default function ProductPage({ params }: PageProps) {
               href={product.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-center bg-[#ffe564] text-[#8627b5] py-3 px-8 rounded-lg hover:bg-yellow-200 transition-colors font-semibold"
+              className="text-center bg-[#349667] text-[#ffffff] py-3 px-8 rounded-lg hover:bg-[#2c7a52] transition-colors font-semibold"
             >
               View on GitHub
             </a>
@@ -67,13 +68,13 @@ export default function ProductPage({ params }: PageProps) {
               href={product.url1}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-center bg-[#ffe564] text-[#8627b5] py-3 px-8 rounded-lg hover:bg-yellow-200 transition-colors font-semibold"
+              className="text-center bg-[#349667] text-[#ffffff] py-3 px-8 rounded-lg hover:bg-[#2c7a52] transition-colors font-semibold"
             >
               View Live Demo
             </a>
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
